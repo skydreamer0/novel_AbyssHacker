@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>廢星牧魂者</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="app">
+      <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+          <div>
+            <h1>廢星牧魂者</h1>
+            <p>Ratforge: Soul Shepherd of the Waste Star</p>
+          </div>
+          <button id="theme-toggle" type="button" class="icon-btn" aria-label="切換深色模式">
+            深色
+          </button>
+        </div>
+        <label class="search-wrap" for="search-input">
+          <span>搜尋章節</span>
+          <input id="search-input" type="search" placeholder="輸入章節名..." />
+        </label>
+        <div id="status" class="status">載入中...</div>
+        <nav id="chapter-list" class="chapter-list"></nav>
+      </aside>
+      <main class="reader">
+        <header class="reader-header">
+          <div class="reader-title-row">
+            <button id="menu-btn" type="button" class="icon-btn menu-btn" aria-label="切換目錄">
+              目錄
+            </button>
+            <h2 id="chapter-title">請從左側選擇章節</h2>
+          </div>
+          <div class="nav-buttons">
+            <button id="theme-toggle-top" type="button" class="icon-btn theme-toggle" aria-label="切換深色模式">
+              深色
+            </button>
+            <button id="prev-btn" class="nav-prev" type="button" disabled>上一章</button>
+            <button id="next-btn" class="nav-next" type="button" disabled>下一章</button>
+          </div>
+        </header>
+        <article id="content" class="content">
+          <p>正在準備內容...</p>
+        </article>
+        <div class="bottom-nav">
+          <button id="prev-btn-bottom" class="nav-prev" type="button" disabled>上一章</button>
+          <button id="next-btn-bottom" class="nav-next" type="button" disabled>下一章</button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
