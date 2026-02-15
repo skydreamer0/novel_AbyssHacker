@@ -4,81 +4,43 @@
 
 > 一名凡人駭客穿越到被深淵侵蝕的修仙世界，藉助賽博系統駭入世界源代碼，對抗扭曲的真理。
 
----
+## 專案結構
 
-## 📊 專案狀態 (Project Status)
+```text
+NOVEL/
+├── manuscript/
+│   ├── volume1/          # 第一卷章節 (001-020)
+│   └── volume2/          # 第二卷章節 (021+)
+├── worldbuilding/
+│   ├── world/            # 世界觀 / 生物
+│   ├── characters/       # 角色檔案
+│   └── system/           # 系統機制與版本
+├── planning/
+│   ├── story/            # 各卷大綱 / 後續規劃
+│   ├── meta/             # 讀者與定位分析
+│   └── writing_rules.md  # 寫作規範
+└── workflow/
+    ├── ai_resolved/      # 任務與腦暴歷史輸出
+    └── meta/             # 對應 metadata json
+```
 
-| 項目 | 狀態 |
-|------|------|
-| **第一卷** | ✅ 已完結 (20章) |
-| **第二卷** | 📝 寫作中 |
-| **總字數** | 約 8.5 萬字 |
-| **最後更新** | 2026-02-10 |
+## 閱讀入口
 
----
+- 第一卷章節：`manuscript/volume1/`
+- 第二卷章節：`manuscript/volume2/`
+- 第一卷大綱：`planning/story/volume1_outline.md`
+- 第二卷大綱：`planning/story/volume2_outline.md`
+- 後續規劃：`planning/story/future_planning.md`
 
-## 📖 閱讀目錄 (Table of Contents)
+## 設定文檔
 
-### 第一卷：外門風雲 (Volume 1: Outer Sect Turmoil) ✅
+- 世界觀：`worldbuilding/world/world_view.md`
+- 生物圖鑑：`worldbuilding/world/bestiary.md`
+- 角色檔案：`worldbuilding/characters/profiles.md`
+- 系統機制：`worldbuilding/system/mechanics.md`
+- 內核 2.0：`worldbuilding/system/kernel_2.0.md`
 
-| # | 章節標題 | 連結 |
-|---|----------|------|
-| 1 | 錯誤代碼 | [chapter_001.md](chapter_001.md) |
-| 2 | 認知濾網 | [chapter_002.md](chapter_002.md) |
-| 3 | 雜役弟子的日常 | [chapter_003.md](chapter_003.md) |
-| 4 | 解析之眼 | [chapter_004.md](chapter_004.md) |
-| 5 | 趙執事的凝視 | [chapter_005.md](chapter_005.md) |
-| 6 | 肉山 | [chapter_006.md](chapter_006.md) |
-| 7 | 覺醒 | [chapter_007.md](chapter_007.md) |
-| 8 | 蟄伏 | [chapter_008.md](chapter_008.md) |
-| 9 | 指令重寫 | [chapter_009.md](chapter_009.md) |
-| 10 | 狩獵 | [chapter_010.md](chapter_010.md) |
-| 11 | 對決 | [chapter_011.md](chapter_011.md) |
-| 12 | 收穫 | [chapter_012.md](chapter_012.md) |
-| 13 | 暗流 | [chapter_013.md](chapter_013.md) |
-| 14 | 渾水 | [chapter_014.md](chapter_014.md) |
-| 15 | 風暴前夕 | [chapter_015.md](chapter_015.md) |
-| 16 | 棋子 | [chapter_016.md](chapter_016.md) |
-| 17 | 內門的黑手 | [chapter_017.md](chapter_017.md) |
-| 18 | 漏洞擴散 | [chapter_018.md](chapter_018.md) |
-| 19 | 格式化 | [chapter_019.md](chapter_019.md) |
-| 20 | 重啟 (卷終) | [chapter_020.md](chapter_020.md) |
+## 備註
 
-### 第二卷：晉升內門 (Volume 2: Ascending to Inner Sect) 📝
-
-| # | 章節標題 | 連結 |
-|---|----------|------|
-| 21 | 落霞村 | [chapter_021.md](chapter_021.md) |
-| 22 | 內核 2.0 | [chapter_022.md](chapter_022.md) |
-
-
----
-
-## 📚 設定文檔 (Documentation)
-
-### 🌍 世界觀 (World)
-- [世界觀設定](docs/world/world_view.md) - 歷史真相、勢力分佈
-- [生物圖鑑](docs/world/bestiary.md) - 怪物與變異獸
-
-### 👥 角色 (Characters)
-- [角色檔案](docs/characters/profiles.md) - 主角與NPC資料
-
-### ⚙️ 系統 (System)
-- [系統機制](docs/system/mechanics.md) - 「內核」功能與規則
-
-### 📝 劇情 (Story)
-- [第一卷大綱](docs/story/volume1_outline.md) - 完整章節規劃
-- [後續規劃](docs/story/future_planning.md) - 第二卷及未來發展
-
-### 📋 規範 (Rules)
-- [寫作規範](docs/writing_rules.md) - 格式與輸出要求
-
-### 📂 元數據 (Meta)
-- [讀者分析](docs/meta/audience.md)
-- [頭腦風暴](docs/meta/brainstorming.md)
-
----
-
-## 🏷️ 標籤 (Tags)
-
-`#修仙` `#賽博龐克` `#克蘇魯` `#系統流` `#理性升級` `#暗黑`
+- 舊的根目錄章節檔與 `docs/` 已整理到上述新位置。
+- `workflow/` 主要是寫作流程資料，不建議作為正式閱讀入口。
