@@ -15,7 +15,7 @@ const config = {
   includeExtensions: [".md"],
   githubOwner: inferredGithub?.owner || "skydreamer0",
   githubRepo: inferredGithub?.repo || "NOVEL",
-  githubBranch: branchFromQuery || "master",
+  githubBranch: branchFromQuery || "main",
 };
 
 const statusEl = document.getElementById("status");
