@@ -7,39 +7,48 @@
 ## 專案結構
 
 ```text
-NOVEL/
-├── manuscript/
-│   ├── volume1/          # 第一卷章節 (001-020)
-│   └── volume2/          # 第二卷章節 (021+)
-├── worldbuilding/
-│   ├── world/            # 世界觀 / 生物
-│   ├── characters/       # 角色檔案
-│   └── system/           # 系統機制與版本
-├── planning/
-│   ├── story/            # 各卷大綱 / 後續規劃
-│   ├── audience_analysis.md # 讀者與定位分析
-│   └── writing_rules.md  # 寫作規範
-└── workflow/             # 寫作輔助工作流與提示詞
-
+小說專案/
+├── 稿件/
+│   ├── 第1卷/                  # 第一卷章節 (001-020)
+│   └── 第2卷/                  # 第二卷章節 (021+)
+├── 世界觀/
+│   ├── 01_宇宙觀與歷史.md
+│   ├── 02_勢力與社會.md
+│   ├── 03_長生宗詳設.md
+│   ├── 04_修煉與術法.md
+│   ├── 05_賽博系統.md
+│   ├── 06_角色檔案.md
+│   └── 07_生物圖鑑.md
+├── 規劃/
+│   ├── 劇情/
+│   │   ├── 第一卷大綱.md
+│   │   ├── 第二卷大綱.md
+│   │   └── 後續規劃.md
+│   ├── 讀者分析.md
+│   └── 寫作規範.md
+└── 工作流/                       # 寫作輔助工作流
 ```
 
 ## 閱讀入口
 
-- 第一卷章節：`manuscript/volume1/`
-- 第二卷章節：`manuscript/volume2/`
-- 第一卷大綱：`planning/story/volume1_outline.md`
-- 第二卷大綱：`planning/story/volume2_outline.md`
-- 後續規劃：`planning/story/future_planning.md`
+- 第一卷章節：`稿件/第1卷/`
+- 第二卷章節：`稿件/第2卷/`
+- 第一卷大綱：`規劃/劇情/第一卷大綱.md`
+- 第二卷大綱：`規劃/劇情/第二卷大綱.md`
+- 後續規劃：`規劃/劇情/後續規劃.md`
 
-## 設定文檔
+## 設定文檔（按層級排列）
 
-- 世界觀：`worldbuilding/world/world_view.md`
-- 生物圖鑑：`worldbuilding/world/bestiary.md`
-- 角色檔案：`worldbuilding/characters/profiles.md`
-- 系統機制：`worldbuilding/system/mechanics.md`
-- 內核 2.0：`worldbuilding/system/kernel_2.0.md`
+| 文件 | 內容 |
+|------|------|
+| `01_宇宙觀與歷史.md` | 天候、歷史時間線、扭曲真理、深淵母神、舊時代 |
+| `02_勢力與社會.md` | 深淵系／反深淵系門派、社會互動 |
+| `03_長生宗詳設.md` | 組織結構、地點、天樞協議、資訊階層 |
+| `04_修煉與術法.md` | 等級對照、術法分類、丹藥物品 |
+| `05_賽博系統.md` | 全模組版本歷史、能量成長表、特殊協議 |
+| `06_角色檔案.md` | 主角（含裝備技能）、盟友、敵人 |
+| `07_生物圖鑑.md` | 按等級分類的變異獸與特殊存在 |
 
 ## 備註
 
-- 舊的根目錄章節檔與 `docs/` 已整理到上述新位置。
-- `workflow/` 主要是寫作流程資料，不建議作為正式閱讀入口。
+- `工作流/` 主要是寫作流程資料，不建議作為正式閱讀入口。
