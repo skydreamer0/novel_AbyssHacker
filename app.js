@@ -14,7 +14,7 @@ const forceSourceFromQuery = new URL(window.location.href).searchParams.get("sou
 const config = {
   includeExtensions: [".md"],
   githubOwner: inferredGithub?.owner || "skydreamer0",
-  githubRepo: inferredGithub?.repo || "NOVEL",
+  githubRepo: inferredGithub?.repo || "novel_AbyssHacker",
   githubBranch: branchFromQuery || "main",
 };
 
@@ -369,9 +369,11 @@ async function loadFileList() {
   }
 
   if (!tree) {
-    throw new Error(
-      `Netlify 與 GitHub 皆讀取失敗。Netlify: ${String(netlifyError)} | GitHub: ${String(githubError)}`,
-    );
+    const errorMsg = `Netlify 與 GitHub 皆讀取失敗。\nNetlify: ${String(netlifyError)}\nGitHub: ${String(githubError)}`;
+    if (String(githubError).includes("404")) {
+      throw new Error(errorMsg + "\n\n提示：如果遇到 404 錯誤，請確認 GitHub 儲存庫是否存在，且是否為「公開 (Public)」狀態。私有儲存庫無法透過公開 API 讀取。");
+    }
+    throw new Error(errorMsg);
   }
 
   files = tree
