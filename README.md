@@ -17,11 +17,10 @@ NOVEL/
 │   └── system/           # 系統機制與版本
 ├── planning/
 │   ├── story/            # 各卷大綱 / 後續規劃
-│   ├── meta/             # 讀者與定位分析
+│   ├── audience_analysis.md # 讀者與定位分析
 │   └── writing_rules.md  # 寫作規範
-└── workflow/
-    ├── ai_resolved/      # 任務與腦暴歷史輸出
-    └── meta/             # 對應 metadata json
+└── workflow/             # 寫作輔助工作流與提示詞
+
 ```
 
 ## 閱讀入口
